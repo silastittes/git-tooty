@@ -11,6 +11,7 @@ output: beamer_presentation
 >- Working with a remote repository --  `GitHub`  
 >- Working with a local repository -- `git`
 >- Version control *basics* -- reviewing file histories
+>- Where to go from here
 
 ##I don't `git` it, why should I do this?
 > - Version control -- because you *will* screw something up.
@@ -44,7 +45,7 @@ knitr::include_graphics("images/codebro.jpg")
 
 
 ## You are, but even if you're "not"
-"GitHub is used to manage the collaborative development of recipes, musical scores, books, fonts, legal documents, lessons and tutorials, and data sets"
+["GitHub is used to manage the collaborative development of recipes, musical scores, books, fonts, legal documents, lessons and tutorials, and data sets"](http://www.infoworld.com/article/2886828/collaboration-software/github-for-the-rest-of-us.html)
 ```{r, out.width = "200px", fig.align='center', echo=FALSE}
 knitr::include_graphics("images/githubforall.png")
 ```
@@ -128,3 +129,5 @@ add, commit, push
 
 
 # Version control basics -- reviewing file histories
+
+# Where to go from here
