@@ -19,7 +19,7 @@ output: beamer_presentation
 > - Remote backup -- because your computer *will* die.
 > - Public portfolio -- because you *should* demonstrate your 
 awesomeness to the world.
->- Encourages reproducibility and creativity.
+>- Encourages reproducibility *and* creativity.
 
 ```{r, out.width = "200px", fig.align='center', echo=FALSE}
 knitr::include_graphics("images/Octocat.png")
