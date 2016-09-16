@@ -1,4 +1,0 @@
-git add --all
-git commit -m "short discription of code changes"
-git push -u origin master 
-#branch will typically by master for indie projects
