@@ -13,6 +13,7 @@ output: beamer_presentation
 >- Version control *basics* -- reviewing file histories
 >- Where to go from here
 
+
 ## "I don't `git` it, why should I do this?"
 > - Version control -- because you *will* screw something up.
 > - Version control -- because uncontrolled version proliferation is *the devil*.
@@ -25,6 +26,13 @@ awesomeness to the world.
 ```{r, out.width = "100px", fig.align='center', echo=FALSE}
 knitr::include_graphics("images/Octocat.png")
 ```
+
+
+## Things I use `git` and `GitHub` for:
+>- My blog -- silas.tittes.github.io
+>- All the code I care about (some private on BitBucket)
+>- Teaching materials and teaching diary (not private)
+>- This presentation
 
 
 ## "What if people look at my code and think I'm dumb?"
@@ -207,9 +215,16 @@ But -- too much too soon.
 ## Conclusions
 >- `git` and `GitHub` are valuable modern tools even for non-programmers -- learn how to use them!
 >- You can now make a solo repo and implement add, commit, push cycles for version control and remote storage.
->- Hopefully you have a sense of the more advanced version control options available to you.
+>- Hopefully you have a sense of the more advanced version control options available to you, even if you aren't comfortable using them yet.
 
 
 ## Where to go from here
 practice lots, read documentation, practice more
+
+
+## Octocat is watching
+```{r, out.width = "200px", fig.align='center', echo=FALSE}
+knitr::include_graphics("images/octo-grump.jpg")
+```
+git silly
 
