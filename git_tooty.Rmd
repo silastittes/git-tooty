@@ -10,7 +10,7 @@ output: beamer_presentation
 >- I don't `git` `git`, why should I do this?
 >- Working with a remote repository --  `GitHub`  
 >- Working with a local repository -- `git`
->- Version control *basics* -- reviewing file histories
+>- Version control *basics* -- review commits, branching, and merging
 >- Conclusions and where to go from here
 
 # Motivation
@@ -152,7 +152,7 @@ git show HEAD~<int>:<filename>
 ```
 
 
-## Explore previous commits, or testing ideas your unsure about -- branch first!
+## Explore previous commits, or testing new ideas -- branch first!
 ```{r, engine="bash", eval = FALSE}
 #create a new branch
 git checkout -b branch_name
