@@ -13,32 +13,33 @@ output: beamer_presentation
 >- Version control *basics* -- reviewing file histories
 >- Where to go from here
 
-##I don't `git` it, why should I do this?
+## "I don't `git` it, why should I do this?"
 > - Version control -- because you *will* screw something up.
+> - Version control -- because uncontrolled version proliferation is *the devil*.
 > - Collaboration -- because *everything* is better together.
 > - Remote backup -- because your computer *will* die.
 > - Public portfolio -- because you *should* demonstrate your 
 awesomeness to the world.
 >- Encourages reproducibility *and* creativity.
 
-```{r, out.width = "200px", fig.align='center', echo=FALSE}
+```{r, out.width = "100px", fig.align='center', echo=FALSE}
 knitr::include_graphics("images/Octocat.png")
 ```
 
 
-##What if people look at my code and think I'm dumb?
+## "What if people look at my code and think I'm dumb?"
 ```{r, out.width = "200px", fig.align='center', echo=FALSE}
 knitr::include_graphics("images/i-has-the-dumb.jpg")
 ```
 
 
-## What if people look at my code and think I'm dumb?
+## "What if people look at my code and think I'm dumb?"
 ```{r, out.width = "200px", fig.align='center', echo=FALSE}
 knitr::include_graphics("images/Notime.jpg")
 ```
 
 
-## I'm not really a coder
+## "I'm not really a coder"
 ```{r, out.width = "200px", fig.align='center', echo=FALSE}
 knitr::include_graphics("images/codebro.jpg")
 ```
@@ -54,7 +55,7 @@ knitr::include_graphics("images/githubforall.png")
 # Working with a remote repository -- `GitHub` (or `BitBucket`)
 
 
-##Let's make a `GitHub` log-in and repository!
+## Let's make a `GitHub` log-in and repository!
 ```{r, out.width = "200px", fig.align='center', echo=FALSE}
 knitr::include_graphics("images/chefcat.jpg")
 ```
@@ -76,8 +77,9 @@ Now make some changes to your README.md on your computer,
 or create a new file. Perhaps `hello.cpp` if you're feeling real crazy.
 
 
-##Git used to it -- the basics
-You've made some local repo edits to some code or documentation, what now?
+## Git used to it -- the basics
+You've made some local repo edits to some code, documentation, 
+draft manuscript, data, or cookie recipe. What now?
 ```{r, engine="bash", eval = FALSE}
 #See what's changed
 git status
@@ -89,11 +91,11 @@ git add --all # --all, or specify files
 #This is what creates version control
 git commit -m "short discription of code changes"
 
-#sync local and remote repos
+#sync local and remote repos on master branch
 git push -u origin master 
 ```
 
-##Error!
+## Error!
 ```{r, engine="bash", eval = FALSE}
 git config --global user.name "Octocat69"
 git config --global user.email "Octocat69@bbqchikn.com"
@@ -128,6 +130,86 @@ add, commit, push
 
 
 
-# Version control basics -- reviewing file histories
+## Version control basics -- reviewing file histories
+```{r, engine="bash", eval = FALSE}
+#git overview of commits to repo
+git log #for whole repo 
 
-# Where to go from here
+#git overview of commits for one file
+git log <filename> 
+
+#review int-th previous version of file
+git show HEAD~<int>:<filename>
+```
+
+
+## Explore previous commits -- branch first!
+Make a commit now just to be safe
+```{r, engine="bash", eval = FALSE}
+#create a new branch
+git checkout -b branch_name
+  
+#short term cache of current repo
+git stash
+
+#check which branch you're on
+git branch #prints asterisk next to current branch
+
+#go back to old commit by hash value
+#see git log for hash values
+git checkout <commit number>
+```
+
+
+
+## What now? 
+1. If you were just curious, but like the most recent commits:
+```{r, engine="bash", eval = FALSE}
+#go back to most recent commit
+git stash apply
+```
+
+
+## What now? 
+2. Or remove branch entirely
+```{r, engine="bash", eval = FALSE}
+#remove branch name -- caution
+git branch -d branch_name
+```
+
+
+## What now? 
+3. Push your new branch to remote repo
+```{r, engine="bash", eval = FALSE}
+git add --all # --all, or specify files
+git commit -m "short discription of code changes"
+git push -u origin branch_name
+```
+
+
+## What now? 
+4. Merge with master branch, 
+```{r, engine="bash", eval = FALSE}
+#go back to master branch
+git checkout master
+
+#merge branch with master branch
+git merge branch_name #read messages carefully!
+
+```
+
+
+## What now? 
+5. Not your repo? Submit pull request.
+But -- too much too soon.
+
+
+## Conclusions
+>- `git` and `GitHub` are valuable modern tools even for non-programmers -- learn how to use them!
+>- You can now make a solo repo and implement add, commit, push cycles for version control and remote storage.
+>- Hopefully you have a sense of the more advanced version control options available to you.
+
+
+## Where to go from here
+practice lots, read documentation, practice more
+
