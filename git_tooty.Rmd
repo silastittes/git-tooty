@@ -180,10 +180,8 @@ git stash apply
 2. If you screwed up bad and need to go back to previous version
 check out [oh shit, git!](http://ohshitgit.com/)
 ```{r, engine="bash", eval = FALSE}
-#go back to master branch
-git checkout master
-#revert to previous commit
-git revert HEAD~1 
+#revert to int-th previous commit
+git reset --hard HEAD~<int> 
 #add commit to remote repo
 git push origin master
 ```
