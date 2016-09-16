@@ -11,8 +11,9 @@ output: beamer_presentation
 >- Working with a remote repository --  `GitHub`  
 >- Working with a local repository -- `git`
 >- Version control *basics* -- reviewing file histories
->- Where to go from here
+>- Conclusions and where to go from here
 
+# Motivation
 
 ## "I don't `git` it, why should I do this?"
 > - Version control -- because you *will* screw something up.
@@ -136,7 +137,7 @@ add, commit, push
 
 add, commit, push
 
-
+# Version control basics
 
 ## Version control basics -- reviewing file histories
 ```{r, engine="bash", eval = FALSE}
@@ -177,14 +178,15 @@ git stash apply
 ```
 
 ##What now?
-2. If you screwed up bad and need to go back to previous version
-check out [oh shit, git!](http://ohshitgit.com/)
+2. If you screwed up bad and need to go back to previous version.
 ```{r, engine="bash", eval = FALSE}
 #revert to int-th previous commit
 git reset --hard HEAD~<int> 
 #add commit to remote repo
 git push origin master
 ```
+Also, check out [oh shit, git!](http://ohshitgit.com/)
+
 
 ## What now? 
 3. Or remove branch entirely
@@ -219,6 +221,8 @@ git merge branch_name #read messages carefully!
 6. Not your repo? Forking and submitting pull requests.
 But -- too much too soon.
 
+
+# Conclusions and where to go from here
 
 ## Conclusions
 >- `git` and `GitHub` are valuable modern tools even for non-programmers -- learn how to use them!
