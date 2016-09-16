@@ -151,8 +151,7 @@ git show HEAD~<int>:<filename>
 ```
 
 
-## Explore previous commits -- branch first!
-Make a commit now just to be safe
+## Explore previous commits, or testing ideas your unsure about -- branch first!
 ```{r, engine="bash", eval = FALSE}
 #create a new branch
 git checkout -b branch_name
@@ -177,9 +176,20 @@ git checkout <commit number>
 git stash apply
 ```
 
+##What now?
+2. If you screwed up bad and need to go back to previous version
+check out [oh shit, git!](http://ohshitgit.com/)
+```{r, engine="bash", eval = FALSE}
+#go back to master branch
+git checkout master
+#revert to previous commit
+git revert HEAD~1 
+#add commit to remote repo
+git push origin master
+```
 
 ## What now? 
-2. Or remove branch entirely
+3. Or remove branch entirely
 ```{r, engine="bash", eval = FALSE}
 #remove branch name -- caution
 git branch -d branch_name
@@ -187,7 +197,7 @@ git branch -d branch_name
 
 
 ## What now? 
-3. Push your new branch to remote repo
+4. Push your new branch to remote repo
 ```{r, engine="bash", eval = FALSE}
 git add --all # --all, or specify files
 git commit -m "short discription of code changes"
@@ -196,7 +206,7 @@ git push -u origin branch_name
 
 
 ## What now? 
-4. Merge with master branch, 
+5. Merge with master branch, 
 ```{r, engine="bash", eval = FALSE}
 #go back to master branch
 git checkout master
@@ -208,7 +218,7 @@ git merge branch_name #read messages carefully!
 
 
 ## What now? 
-5. Not your repo? Submit pull request.
+6. Not your repo? Forking and submitting pull requests.
 But -- too much too soon.
 
 
