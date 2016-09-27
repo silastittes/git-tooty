@@ -104,8 +104,8 @@ git push -u origin master
 
 ## Error!
 ```{r, engine="bash", eval = FALSE}
-git config --global user.name "Octocat69"
-git config --global user.email "Octocat69@bbqchikn.com"
+git config user.name "Octocat69"
+git config user.email "Octocat69@bbqchikn.com"
 ```
 
 ```{r, out.width = "200px", fig.align='center', echo=FALSE}
