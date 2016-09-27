@@ -1,6 +1,5 @@
 ---
 title: "Git tooty"
-subtitle: "(fart joke?)"
 author: "Silas Tittes"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: beamer_presentation
@@ -82,9 +81,8 @@ knitr::include_graphics("images/matrix.jpg")
 ```{r, engine="bash", eval = FALSE}
 git clone https://github.com/octocat/lovecatz.git
 ```
-Now make some changes to your README.md on your computer,
-or create a new file. Perhaps `hello.cpp` if you're feeling real crazy.
-
+Now add a bash script and a README.md to your local repository 
+on your computer, or create a new file.
 
 ## Git used to it -- the basics
 You've made some local repo edits to some code, documentation, 
@@ -129,6 +127,7 @@ Check out remote GitHub repo to see updates.
 ```{r, out.width = "200px", fig.align='center', echo=FALSE}
 knitr::include_graphics("images/karate.jpg")
 ```
+
 add, commit, push
 
 add, commit, push
@@ -150,6 +149,28 @@ git log <filename>
 #review int-th previous version of file
 git show HEAD~<int>:<filename>
 ```
+
+
+## Conclusions
+>- `git` and `GitHub` are valuable modern tools even for non-programmers -- learn how to use them!
+>- You can now make a solo repo and implement add, commit, push cycles for version control and remote storage.
+>- Hopefully you have a sense of the more advanced version control options available to you, even if you aren't comfortable using them yet.
+
+
+## Octocat is watching
+```{r, out.width = "200px", fig.align='center', echo=FALSE}
+knitr::include_graphics("images/octo-grump.jpg")
+```
+git silly
+
+
+
+## Where to go from here
+practice lots, read documentation, practice more
+
+
+
+# Extra Slides
 
 
 ## Explore previous commits, or testing new ideas -- branch first!
